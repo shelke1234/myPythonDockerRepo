@@ -13,7 +13,7 @@ spec:
         app: my-python-app
     spec:
       containers:
-      - name: mypythondockerrepo
+      - name: nilkamal
         image: sudhiracrdemo.azurecr.io/nilkamal:$(Build.BuildNumber)
         ports:
         - containerPort: 5000
