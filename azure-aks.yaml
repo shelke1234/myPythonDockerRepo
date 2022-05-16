@@ -13,8 +13,8 @@ spec:
         app: my-python-app
     spec:
       containers:
-      - name: nilkamal
-        image: sudhiracrdemo.azurecr.io/nilkamal:latest
+      - name: sudhirdockerrepo
+        image: sudhirgurav24/sudhirdockerrepo:latest
         ports:
         - containerPort: 5000
 # service type loadbalancer       
