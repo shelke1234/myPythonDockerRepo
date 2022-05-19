@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sudhirguravmypythondockerrepo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sudhirguravmypythondockerrepo
+  template:
+    metadata:
+      labels:
+        app: sudhirguravmypythondockerrepo 
+    spec:
+      containers:
+        - name: sudhirguravmypythondockerrepo 
+          image: sudhirnewacr.azurecr.io/sudhirguravmypythondockerrepo
+          ports:
+          - containerPort: 5000
