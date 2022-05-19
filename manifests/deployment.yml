@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pythondockerrepo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pythondockerrepo
+  template:
+    metadata:
+      labels:
+        app: pythondockerrepo 
+    spec:
+      containers:
+        - name: pythondockerrepo 
+          image: dockeraz.azurecr.io/pythondockerrepo
+          ports:
+          - containerPort: 5000
